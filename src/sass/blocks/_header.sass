@@ -1,0 +1,52 @@
+header
+	min-height: 800px
+	@media ( max-width: 991px )
+		min-height: 500px
+	@media ( max-width: 767px )
+		min-height: 450px
+	background: url('../img/main_bg.jpg') center center/cover no-repeat
+	nav
+		max-width: 618px
+		margin: 0 auto
+		@media ( max-width: 767px )
+			max-width: 500px
+		@media ( max-width: 575px )
+			max-width: 314px	
+	.logo
+		display: block
+		margin: 0 64px
+		@media ( max-width: 991px )
+			margin: 0 50px
+		@media ( max-width: 767px )
+			margin: 0 16px
+		@media ( max-width: 575px )
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			margin: 0
+			padding-top: 20px
+		img
+			width: 94px
+			@media ( max-width: 767px )
+				width: 74px
+	.menu
+		position: relative
+		margin-bottom: 0
+		padding-top: 35px
+		padding-left: 0
+		display: flex
+		justify-content: space-between
+		align-items: center
+		list-style-type: none
+		@media ( max-width: 575px )
+			padding-top: 100px
+		&__link
+			color: #4d4959
+			font-size: 13px
+			font-weight: 700
+			text-transform: uppercase
+			&:hover
+				text-decoration: none
+				color: #5dc59d
+			

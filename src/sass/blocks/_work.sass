@@ -1,0 +1,67 @@
+.work
+	display: flex
+	flex-wrap: wrap
+	&__item
+		display: flex
+		width: 100%
+		@media ( max-width: 991px )
+			flex-wrap: wrap
+			justify-content: center
+		@media ( max-width: 575px )
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+
+	&__company
+		width: 100%
+
+	&__twoblocks
+		background: url(../img/work/1.jpg) center center/cover no-repeat
+		height: 600px
+		position: relative
+	&__twoblocks_fon1
+		background: url(../img/work/2.jpg) center center/cover no-repeat
+	&__twoblocks_fon2
+		background: url(../img/work/3_1.jpg) center center/cover no-repeat
+	&__twoblocks_fon3
+		background: url(../img/work/3_2.jpg) center center/cover no-repeat
+
+	&__logo
+		width: 113px
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+	&__logo_width
+		width: 177px
+	&__logo_width1
+		width: 208px
+
+	&__aboutwork
+		width: 533px
+		height: 600px
+		@media ( max-width: 1200px )
+			width: 464px
+		@media ( max-width: 991px )
+			width: 100%
+		.smallfon
+			width: 533px
+			@media ( max-width: 1200px )
+				width: 464px
+			@media ( max-width: 991px )
+				width: 100%
+	&__text
+		padding: 71px 68px 94px 68px
+		@media ( max-width: 575px )
+			padding: 71px 4px 94px
+
+	&__icon1
+		display: block
+		margin: 0 auto
+		width: 41px	
+	&__icon1_icon2
+		width: 30px
+	&__icon1_icon3
+		width: 23px
+	
+		
