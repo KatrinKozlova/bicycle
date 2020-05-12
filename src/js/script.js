@@ -19,6 +19,21 @@ $(document).ready(function(){
 		const _href = $(this).attr("href");
 		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
 		return false;
+    });
+    
+    //form submit
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('form').trigger('reset');
+        });
+        return false;
 	});
 
 });
